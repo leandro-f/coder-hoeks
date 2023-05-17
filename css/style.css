@@ -20,6 +20,9 @@ a{
   list-style-type: none;
   color: white;
 }
+.media_nav{
+  display: none;
+}
 .header {
     display: flex;
     background-color:rgb(103, 151, 255);
@@ -455,15 +458,19 @@ form .campo{
 .info_form a {
   font-size:13px;
 }
-
-
-
-
-
-
-
-
-
+                        /* PAGINA DE CONTACTO */
+.media_nav{
+  display: block;
+}
+.media_nav img{
+  width: 90px;
+  margin-left: 100%;
+}
+.color_nav{
+  background-color:rgb(103, 151, 255);
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
 
 
 
