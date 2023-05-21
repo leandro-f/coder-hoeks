@@ -103,105 +103,156 @@ nav ul li:hover > ul {
 
 
                        /* BODY */ 
-.titulo{
-  background-color: rgb(242, 130, 1);
-  padding-left: 500px;
-  margin: 10px 0px 10px 0px;
+.titulo {
+  background-color: #f68b33;
+   width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 5px;
 }
-/*                   /* CARRUCEL DE FOTOS */
-/* 
-#container_carrucel{
-  
- height: 300px;
-  overflow: hidden;
-  
-  position: relative;
-}
-#container_carrucel  img{
- width: 100%;
- height: 100%;
-}
-.item_carrucel{
-  
-  height: 100%;
-  position: relative;
-  
-}
-.tarjetas_carrucel{
 
-  height: 100%;
-}
-.flechas_carrucel{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-i{
-  color: #fff;
-} */
               /*  CARD */
-.prueba{
-  display: flex;
-  flex-direction: row;
-}
-.section_card{
+
+.section_card {
   background-color: #333;
   margin-top: 10px;
-  display: flex;
+  display: grid;
   justify-content: space-around;
-  flex-wrap: wrap;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.container_card{
+
+.container_card {
   background-color: #f68b33;
-  width: 30%;
-  max-width: 500px;
-  height: 600px;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   line-height: 170%;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 6px;
   border: 3px solid black;
-  margin-top: 10px;
+}
 
-}
-.container_card h3{
-  margin: 0 80px 0 90px;
+.container_card h3 {
+  width: 100%;
+  text-align: center;
   font-size: 20px;
+  font-weight: bolder;
 }
-.container_card  p{
+
+.container_card p {
   margin-left: 5%;
   color: #fff;
 }
-figure{
+
+figure {
   overflow: hidden;
+  background-color: #a72fb0;
 }
-              
-figure img{
+
+figure img {
   background-color: #f68b33;
   width: 100%;
-  height: 400px;
-  max-height: 100%;
+  height: 250px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-  
-figure:hover img{
+
+figure:hover img {
   transform: scale(1.2);
 }
-button{
+
+button {
   cursor: pointer;
   background-color: #100f0f;
   color: #ccc;
   height: 50px;
 }
+                              /* PAGINA DE CONTACTO */
+ .container_form{
+  background-color: rgb(94, 97, 123);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  border: 5px solid rgb(209, 16, 16);
+  width: 60%;
+  height: 100%;
+}
 
-              /* PAGINA DE BUZOSS */
+.info_form{
+
+  width: 50%;
+ 
+}
+.info_form h1{
+  margin-bottom: 15px;
+  margin-left: 15%;
+  
+}
+.info_form p{
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.info_form a{
+ 
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  
+}
+.info_form a i{
+  color: blue;
+  margin-right: 10px;
+}
+form{
+  
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 30%;
+  margin-left: 10px;
+}
+form .campo{
+  height: 40px;
+}
+form .campo, textarea{
+  width: 100%;
+  height: 100%;
+  padding: 10px 10px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  outline: 0px;
+}
+form textarea{
+  max-width: 230px;
+  min-width: 230px;
+  min-height: 140px;
+  max-height: 150px;
+}
+
+.btn_form{
+  display: inline-block;
+  padding: 15px;
+  font-size: 15px;
+  outline: 0px;
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  margin-left: 20%;
+}
+
+.btn_form:hover{
+  background: red;
+}
 
               /*  FOOTER */
 footer{
@@ -281,88 +332,8 @@ footer{
       margin-top: 40px ;
     }
 }
-                              /* PAGINA DE CONTACTO */
-.container_form{
-  background-color: rgb(94, 97, 123);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-top: 10px;
-  border: 5px solid rgb(209, 16, 16);
-  width: 60%;
-  height: 100%;
-}
 
-.info_form{
 
-  width: 50%;
- 
-}
-.info_form h1{
-  margin-bottom: 15px;
-  margin-left: 15%;
-}
-.info_form p{
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-.info_form a{
- 
-  margin-bottom: 10px;
-  width: 100%;
-  display: flex;
-  
-}
-.info_form a i{
-  color: blue;
-  margin-right: 10px;
-}
-form{
-  
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  width: 30%;
-  margin-left: 10px;
-}
-form .campo{
-  height: 40px;
-}
-form .campo, textarea{
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px;
-  border: 2px solid black;
-  margin-bottom: 5px;
-  border-radius: 10px;
-  outline: 0px;
-}
-form textarea{
-  max-width: 230px;
-  min-width: 230px;
-  min-height: 140px;
-  max-height: 150px;
-}
-
-.btn_form{
-  display: inline-block;
-  padding: 15px;
-  font-size: 15px;
-  outline: 0px;
-  background-color: orange;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 300ms ease;
-  margin-left: 20%;
-}
-
-.btn_form:hover{
-  background: red;
-}
 
 @media screen and (max-width: 320PX){
  .header{
@@ -375,103 +346,61 @@ form textarea{
   margin-left: 15px;
  }
 
- .titulo{
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  margin: 0;
-  padding: 10px;
- }
+
           /* MODIFICANDO LAS CARD */
- .section_card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 5px;
+.section_card {
+  grid-template-columns: repeat(2, 1fr);
  }
  .container_card{
   width: 90%;
-  display: inline-block;
   line-height: 20px;
+  height: 300px;
+  
  }
  figure{
   background-color: #333;
-  height: 65%;
+ 
   display:inline-block;
   justify-content: center;
   align-items: center;
  }
  figure img{
-  background-color: #ac82af;
-  height: 300%;
-  object-fit: cover;
+  background-color: #f68b33;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
  }
 
  .container_card h3{
   margin: 0;
   text-align: center;
-  font-size: 20px;
-  background-color: #a72fb0;
-  
+  font-size: 10px;
+  background-color: #6b646b;
  }
  .container_card p{
   line-height: 26px;
+  font-size: 10px;
  }
  button{
   height: 40px;
   width: 100%;
  }
- 
-
-              /* PAGINA DE CONTACTO */
-.container_form{
-  margin: 0 15px;
-  width: 90%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.info_form{
-  
-  width: 90%;
-}
-.info_form h1{
- color: #2ae364;
-  text-align: center;
-  font-size: 20PX;
-  margin: 10px 0px;
-}
-form{
-  
-  margin-right:170px ;
-}
-form .campo{
-  width: 275%;
-  
-}
-.btn_form{
-  display: block;
-  align-items: center;
-  margin: 0 0 10px 50px;
-}
-.info_form a {
-  font-size:13px;
-}
-                        /* PAGINA DE CONTACTO */
-.media_nav{
-  display: block;
-}
-.media_nav img{
-  width: 90px;
-  margin-left: 100%;
-}
-.color_nav{
-  background-color:rgb(103, 151, 255);
-  border: 3px solid black;
-  margin-bottom: 10px;
+ .container_form {
+  width: 50%; 
 }
 
+.info_form {
+  width: 100%;
+}
 
+form {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 0;
+}
 
+.btn_form {
+  margin-left: auto;
+  margin-right: auto;
+}
 }
