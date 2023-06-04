@@ -2,7 +2,7 @@ footer{
     background-color:rgb(103, 151, 255);
       color: rgb(245, 8, 8);
       width: 100%;
-      margin-top: 20px ;
+      margin-top: 10px ;
       padding: 20px;
       max-width: 4000px;
       border: 5px solid black; 
@@ -15,7 +15,7 @@ footer{
     .colum1{
         max-width: 400px;
     }
-    .colum1 h1{
+    .colum1 h3{
         font-size: 22px;
     }
     .colum1 p{
@@ -26,44 +26,51 @@ footer{
     .colum2{
         max-width: 400px;
         cursor: pointer;
+        /* margin-bottom: 20px; */
     }
-    .colum2 label{
-        cursor: pointer;
-    }
-    .colum2 h1{
-        font-size: 22px;
+    .colum2 h3{
+        font-size: 30px;
+        cursor:default;
     }
     .row{
         margin-top: 20px;
-        display: flex;
+        display: block;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .row a{
+        cursor: pointer;
     }
     .row img{
-        width: 36px;
-        height: 36px;
+        width: 70px;
+        height: 50px;
+        cursor: pointer;
+       
     }
-    
-    .row label{
-        margin-top: 5px;
-        margin-left: 10px;
-    }
+  
     .colum3{
         max-width: 400px;
     }
-    .colum3 h1{
-        font-size: 22px;
+    .colum3 h3{
+        font-size: 30px;
     }
     .row2{
         margin-top: 20px;
+        align-items: center;
+        display: flex;
     }
     .row2 img{
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
     }
     .row2 label{
-        margin-left: 10px;
-        margin-top: 10px;
-       
+        
+
+        
     }
+   
     
     @media screen and (max-width: 1100px){
         .container__footer{
