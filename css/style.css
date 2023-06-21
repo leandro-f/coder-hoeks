@@ -9,6 +9,7 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Bruno Ace SC", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -20,7 +21,6 @@ a {
 .header {
   display: flex;
   /* background-color: rgb(103, 151, 255); */
-  background: rgb(29, 163, 253);
   background: linear-gradient(90deg, rgba(29, 163, 253, 0.4612219888) 50%, rgba(252, 176, 69, 0.7329306723) 100%);
   width: 100%;
   height: auto;
@@ -109,6 +109,7 @@ a {
   font-size: 20px;
   font-weight: bolder;
   margin-top: 5px;
+  font-family: "Libre Bodoni", serif;
 }
 
 /*   CARD */
@@ -116,6 +117,7 @@ a {
   background-color: rgba(246, 139, 51, 0.2352941176);
   text-align: center;
   margin: 5px;
+  font-family: "Libre Bodoni", serif;
 }
 
 .main_card {
@@ -343,6 +345,7 @@ footer .row2 img {
   }
   .nav_color {
     background-color: rgb(103, 151, 255);
+    background: linear-gradient(90deg, rgba(29, 163, 253, 0.4612219888) 50%, rgba(252, 176, 69, 0.7329306723) 100%);
   }
   .navbar .navbar-brand {
     display: flex;
