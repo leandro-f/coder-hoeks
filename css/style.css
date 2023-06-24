@@ -51,9 +51,6 @@ a {
   color: #333;
   text-decoration: none;
 }
-.header nav a:hover {
-  color: white;
-}
 .header nav ul ul {
   position: absolute;
   top: 100%;
@@ -65,7 +62,6 @@ a {
 }
 .header nav ul li:hover > ul {
   display: block;
-  /* background-color: rgba(215, 250, 238, 0.839); */
   background-color: rgba(169, 178, 239, 0.8156862745);
 }
 .header nav ul li:hover > a {
@@ -182,7 +178,7 @@ a {
 }
 
 .container_form {
-  background-color: rgb(94, 97, 123);
+  background-color: rgba(94, 97, 123, 0.827);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -207,6 +203,8 @@ a {
 .container_form .info_form p {
   margin-bottom: 15px;
   line-height: 1.6;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
 .container_form .info_form a {
   display: flex;
@@ -285,7 +283,6 @@ footer .colum1 p {
 footer .colum2 {
   max-width: 400px;
   cursor: pointer;
-  /* margin-bottom: 20px; */
 }
 footer .colum2 h3 {
   font-size: 30px;
