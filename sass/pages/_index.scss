@@ -1,10 +1,15 @@
 .nav_burguer{
     display: none;
   }
+#body0{
+  background: rgb(238,174,202);
+  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(255,136,42,0.727328431372549) 100%);
+  width: 100%;
+}
 #body{
-    /* background-color: #ed7171; */
     background: rgb(238,174,202);
     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(255,136,42,0.727328431372549) 100%);
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Bruno Ace SC', cursive;

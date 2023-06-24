@@ -2,10 +2,16 @@
   display: none;
 }
 
-#body {
-  /* background-color: #ed7171; */
+#body0 {
   background: rgb(238, 174, 202);
   background: linear-gradient(90deg, rgb(238, 174, 202) 0%, rgba(255, 136, 42, 0.7273284314) 100%);
+  width: 100%;
+}
+
+#body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(90deg, rgb(238, 174, 202) 0%, rgba(255, 136, 42, 0.7273284314) 100%);
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   font-family: "Bruno Ace SC", cursive;
